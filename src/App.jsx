@@ -4,6 +4,7 @@ import logo from './assets/logo.png';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     // Intersection Observer for scroll animations
@@ -60,10 +61,36 @@ export default function App() {
             ))}
           </nav>
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-primary p-2">
-            <span className="material-symbols-outlined">menu</span>
+          <button 
+            className="md:hidden text-primary p-2"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <span className="material-symbols-outlined">{isMobileMenuOpen ? 'close' : 'menu'}</span>
           </button>
         </header>
+
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden fixed top-20 left-0 w-full bg-surface border-b border-outline-variant z-40 shadow-lg flex flex-col p-4">
+            {navLinks.map((link) => (
+              <a
+                key={`mobile-${link.id}`}
+                href={`#${link.id}`}
+                onClick={() => {
+                  setActiveTab(link.id);
+                  setIsMobileMenuOpen(false);
+                }}
+                className={`font-label-lg text-label-lg py-4 border-b border-outline-variant/30 transition-colors ${
+                  activeTab === link.id
+                    ? 'text-primary font-bold'
+                    : 'text-on-surface-variant'
+                }`}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        )}
         
         <main className="pt-20">
           {/* Section 1 (Hero/Home) */}
