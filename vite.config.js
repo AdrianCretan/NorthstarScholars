@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react';
 import Sitemap from 'vite-plugin-sitemap';
 
 export default defineConfig({
+  base: '/NorthstarScholars/',
   plugins: [
     react(),
     Sitemap({
-      hostname: 'https://nume-proiect.github.io',
+      hostname: 'https://AdrianCretan.github.io/NorthstarScholars',
       dynamicRoutes: ['/'],
       generateRobotsTxt: true,
       robots: [{ userAgent: '*', allow: '/' }],
