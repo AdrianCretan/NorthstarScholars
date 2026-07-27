@@ -504,7 +504,7 @@ export default function App() {
                 <img src={logo} alt="Northstar Scholars" className="h-full w-auto invert" />
               </a>
             </div>
-            <p className="font-caption text-caption text-on-primary/80 max-w-sm">© 2024 Northstar Scholars. All rights reserved. Pursuing Excellence in Scholarship.</p>
+            <p className="font-caption text-caption text-on-primary/80 max-w-sm">© 2026 Northstar Scholars. All rights reserved. Pursuing Excellence in Scholarship.</p>
           </div>
           <div className="flex flex-wrap gap-x-8 gap-y-4 max-w-2xl">
             <a className="font-label-md text-label-md text-on-primary/60 hover:text-on-primary transition-opacity" href="#">Academic Integrity</a>
