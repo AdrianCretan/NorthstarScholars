@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import SeoHead from './components/SeoHead';
+import logo from './assets/logo.png';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -40,7 +41,7 @@ export default function App() {
         {/* TopNavBar */}
         <header className="bg-surface border-b border-outline-variant fixed top-0 left-0 w-full z-50 flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
           <a className="block h-12 w-auto" href="#">
-            <img src="/logo.png" alt="Northstar Scholars" className="h-full w-auto" />
+            <img src={logo} alt="Northstar Scholars" className="h-full w-auto" />
           </a>
           <nav className="hidden md:flex gap-gutter items-center h-full">
             {navLinks.map((link) => (
@@ -473,7 +474,7 @@ export default function App() {
           <div>
             <div className="mb-4 h-12">
               <a className="block h-full w-auto" href="#">
-                <img src="/logo.png" alt="Northstar Scholars" className="h-full w-auto invert" />
+                <img src={logo} alt="Northstar Scholars" className="h-full w-auto invert" />
               </a>
             </div>
             <p className="font-caption text-caption text-on-primary/80 max-w-sm">© 2024 Northstar Scholars. All rights reserved. Pursuing Excellence in Scholarship.</p>
