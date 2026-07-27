@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ro"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NorthStar - Excelență Academică Redefinită</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#131b2e",
+                    "on-tertiary-fixed-variant": "#8c0053",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "surface-container-highest": "#2d3449",
+                    "inverse-surface": "#dae2fd",
+                    "outline-variant": "#464554",
+                    "secondary-fixed-dim": "#ddb7ff",
+                    "tertiary-fixed": "#ffd9e4",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "surface-container": "#171f33",
+                    "outline": "#908fa0",
+                    "background": "#0b1326",
+                    "inverse-primary": "#494bd6",
+                    "on-secondary-fixed": "#2c0051",
+                    "surface-container-high": "#222a3d",
+                    "surface": "#0b1326",
+                    "tertiary-fixed-dim": "#ffb0cd",
+                    "primary-container": "#8083ff",
+                    "on-error": "#690005",
+                    "on-secondary-container": "#d6a9ff",
+                    "secondary": "#ddb7ff",
+                    "on-primary": "#1000a9",
+                    "on-secondary": "#490080",
+                    "surface-variant": "#2d3449",
+                    "on-surface": "#dae2fd",
+                    "on-tertiary": "#640039",
+                    "primary-fixed": "#e1e0ff",
+                    "on-primary-container": "#0d0096",
+                    "secondary-container": "#6f00be",
+                    "tertiary": "#ffb0cd",
+                    "surface-bright": "#31394d",
+                    "on-background": "#dae2fd",
+                    "tertiary-container": "#f751a1",
+                    "primary": "#c0c1ff",
+                    "on-error-container": "#ffdad6",
+                    "surface-tint": "#c0c1ff",
+                    "surface-dim": "#0b1326",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#f0dbff",
+                    "on-secondary-fixed-variant": "#6900b3",
+                    "on-primary-fixed": "#07006c",
+                    "error-container": "#93000a",
+                    "on-surface-variant": "#c7c4d7",
+                    "on-tertiary-fixed": "#3e0022",
+                    "inverse-on-surface": "#283044",
+                    "surface-container-lowest": "#060e20",
+                    "on-tertiary-container": "#570032"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "stack-sm": "12px",
+                    "unit": "8px",
+                    "stack-lg": "48px",
+                    "stack-md": "24px",
+                    "container-max": "1440px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Geist"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "label-md": ["Geist"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-glow {
+            background: radial-gradient(circle, rgba(111, 0, 190, 0.4) 0%, rgba(247, 81, 161, 0.3) 50%, transparent 70%);
+            filter: blur(60px);
+        }
+
+        .animated-orb {
+            animation: orb-float 10s ease-in-out infinite alternate;
+        }
+
+        @keyframes orb-float {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(20px, -30px) scale(1.1); }
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-white/10 shadow-[0_0_20px_rgba(192,193,255,0.05)]">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between h-20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="explore">explore</span>
+<h1 class="font-display-lg text-headline-md tracking-tighter bg-gradient-to-r from-secondary via-tertiary to-primary bg-clip-text text-transparent">NorthStar</h1>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:scale-105 active:scale-95 transition-transform">
+                Get Started
+            </button>
+</div>
+</header>
+<main class="relative pt-20">
+<!-- Hero Background Effects -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden">
+<div class="hero-glow animated-orb absolute top-40 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full opacity-60"></div>
+<div class="hero-glow animated-orb absolute top-[60%] -right-20 w-[300px] h-[300px] rounded-full opacity-40" style="animation-delay: -5s;"></div>
+</div>
+<!-- Hero Section -->
+<section class="relative px-margin-mobile pt-stack-lg pb-stack-lg flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card mb-stack-md">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Viitorul Educației</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-stack-sm max-w-2xl bg-gradient-to-b from-on-surface to-on-surface-variant bg-clip-text text-transparent">
+                Excelență Academică Redefinită
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-lg leading-relaxed">
+                Platforma educațională de ultimă generație pentru viitorii lideri. Învață cu tehnologii de avangardă.
+            </p>
+<div class="flex flex-col w-full gap-gutter md:flex-row md:justify-center">
+<button class="bg-gradient-to-r from-secondary to-tertiary text-on-secondary py-4 px-8 rounded-xl font-label-md text-label-md shadow-[0_0_20px_rgba(221,183,255,0.3)] hover:scale-105 active:scale-95 transition-all">
+                    Începe Acum
+                </button>
+<button class="glass-card text-on-surface py-4 px-8 rounded-xl font-label-md text-label-md hover:bg-white/10 active:scale-95 transition-all">
+                    Află Mai Multe
+                </button>
+</div>
+<!-- Dashboard Preview Placeholder -->
+<div class="mt-stack-lg w-full max-w-3xl glass-card rounded-2xl p-2 aspect-video overflow-hidden shadow-2xl">
+<div class="w-full h-full rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A futuristic, high-fidelity UI dashboard for an educational platform, featuring glassmorphic course cards, glowing progress rings, and elegant data visualizations in a deep navy and purple color scheme. The aesthetic is clean and professional, with a sense of immense depth and technological sophistication, mimicking a digital cockpit for learning." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwjI4kDfnTuNYpwkX9AibEzO96iVppAWM5wHm3tzEPwb4kTzC4pKZ-JohQ_L1XwgY4Q7y7E33EK2iS8ZFEyHQGcbDUqQW_uTmcvywujGm-PMrI_y4O_-cH7ZxQcJaD1lkC2HIpyIhBetVee1pzfrlZHvL9CcZInBZ03MHoGA6gijVJA8MfeMpUnBnvXLk5tmMuNhrozNr7lMbRtMUWjHtqLPC0YG3C8jrEui4KbWNF-nZK5197YpG1dBujMI88qeZ3CXQOGoq6gLI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="px-margin-mobile py-stack-lg relative overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto">
+<!-- Card 1: Performanță -->
+<div class="glass-card p-stack-md rounded-2xl flex flex-col items-start gap-stack-sm group hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Performanță</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                        Viteză incredibilă în procesul de învățare prin module optimizate cognitiv.
+                    </p>
+</div>
+<!-- Card 2: Tehnologie -->
+<div class="glass-card p-stack-md rounded-2xl flex flex-col items-start gap-stack-sm group hover:border-secondary/50 transition-colors">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="memory">memory</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-secondary">Tehnologie</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                        Integrare AI și instrumente moderne care transformă orice curs într-o experiență captivantă.
+                    </p>
+</div>
+<!-- Card 3: Design Premium -->
+<div class="glass-card p-stack-md rounded-2xl flex flex-col items-start gap-stack-sm group hover:border-tertiary/50 transition-colors">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 flex items-center justify-center text-tertiary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="diamond">diamond</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-tertiary">Design Premium</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                        Interfață intuitivă și estetică de top, creată special pentru a reduce oboseala digitală.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Dynamic Element: Courses Grid Section -->
+<section class="px-margin-mobile py-stack-lg bg-surface-container-lowest/50">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-stack-md">
+<div>
+<h2 class="font-headline-md text-headline-md">Programe Populare</h2>
+<p class="text-on-surface-variant">Explorează cele mai căutate cursuri ale academiei.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="relative group rounded-3xl overflow-hidden aspect-[4/3] md:aspect-video glass-card">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="A professional creative workspace with a high-end monitor displaying complex 3D architecture, illuminated by atmospheric neon purple and soft pink desk lighting. The scene is clean, minimalist, and portrays a feeling of creative mastery and technological peak performance in a dark mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzT79bjRhBd0pO4mAVpwOgJmzVTJclNsTOTG8l957XTPETErk6opfSzMZGzzqRt2KomlmeFQn3q6mPdIUi6pqLGTrVFH9QLCizNCpuH0m8O4RZw7cFsekCfZEdvnwt9KZ0zEWWQhoehcnv_QaHudWSg88WJ-XmPqXkGmeOzlNjwAT-TnUJwFnW4lBjxMxItdQAYx6jPu-z9zdfWUAEgqF-Tc_XXLp0MVbkXD7LGTu0HXJiNczmeRzpA9V5cQyaOtNjO_HA0yEvgmY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent flex flex-col justify-end p-stack-md">
+<span class="font-label-sm text-label-sm text-secondary mb-2 uppercase">Arhitectură de Sistem</span>
+<h4 class="font-headline-md text-headline-md mb-2">Inginerie Software Pro</h4>
+<button class="text-primary font-label-md flex items-center gap-1 group/btn">
+                                Înscrie-te <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative group rounded-3xl overflow-hidden aspect-[4/3] md:aspect-video glass-card">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="A glowing holographic representation of a neural network floating in a dark laboratory space with subtle reflections on dark glass surfaces. The lighting features magenta and cyan accents, symbolizing advanced AI technology and data science. The atmosphere is futuristic, premium, and deeply intellectual." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB413bgwy8H38yuj1ay5dloP8hNeQo8fjg3tiCOm5Do3bEX4hO15stL3ZQzskfuPN2hxo-SibvEuSQdgv8rsUFoZTfV4hG3VXue2aPpoDfc57MMVaNhU-P6782zyYjJYn8fgfDsFjVagmIe9VrPrR1MKqftj6aWSB68BNk3rSg4Wb6l0B7Ojmcqa4OfiyItrMgQK3-L03a9U--KMkU6_ANGl1EKcHAtt9fCU2zilNzKxyyY3eEiqP1V1tevxQpSvJCxNTuH-EvpPU4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent flex flex-col justify-end p-stack-md">
+<span class="font-label-sm text-label-sm text-tertiary mb-2 uppercase">Inteligență Artificială</span>
+<h4 class="font-headline-md text-headline-md mb-2">Deep Learning Aplicat</h4>
+<button class="text-primary font-label-md flex items-center gap-1 group/btn">
+                                Înscrie-te <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-stack-lg border-t border-white/5 opacity-80 hover:opacity-100 transition-all">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-gutter">
+<div class="flex flex-col items-center md:items-start gap-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">NorthStar</h3>
+<p class="font-label-md text-label-md text-outline text-center md:text-left">© 2024 NorthStar Academy. Engineering Excellence.</p>
+</div>
+<nav class="flex flex-wrap justify-center gap-stack-md">
+<a class="text-outline font-label-md text-label-md hover:text-primary transition-all" href="#">Curriculum</a>
+<a class="text-outline font-label-md text-label-md hover:text-primary transition-all" href="#">Technology</a>
+<a class="text-outline font-label-md text-label-md hover:text-primary transition-all" href="#">Admissions</a>
+<a class="text-outline font-label-md text-label-md hover:text-primary transition-all" href="#">Privacy</a>
+</nav>
+<div class="flex gap-stack-md">
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors" data-icon="language">language</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors" data-icon="share">share</span>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for glass cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>

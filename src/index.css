@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer utilities {
+  .reveal-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: all 1s ease-out;
+  }
+  .reveal-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: all 1s ease-out;
+  }
+  .reveal-up {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-out;
+  }
+  .active {
+      opacity: 1;
+      transform: translate(0);
+  }
+
+  .custom-shadow {
+      box-shadow: 0 10px 30px rgba(10, 37, 64, 0.05);
+  }
+  
+  .glow-hover:hover {
+      box-shadow: 0 20px 40px rgba(10, 37, 64, 0.15);
+  }
+
+  .faq-item {
+      transition: background-color 0.3s ease;
+  }
+  .faq-item:hover {
+      background-color: rgba(0, 15, 34, 0.02);
+  }
+}
